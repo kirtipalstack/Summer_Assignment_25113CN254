@@ -1,17 +1,24 @@
 #include <stdio.h>
 int main(){
-    int i,n;
+    int i,nisPrime = 1;
     printf("enter a value :");
     scanf("%d",&n);
-for(i=2;i<=n-1;i++){
-if(n%i==0){
-    printf("the number is composite");
-}
- else
-    printf("\nthe number is prime\n");
-    break;
-}
-   return 0;
+    if(num <= 1) {
+        isPrime = 0;
+    } else {
+  for(i=2;i<=n-1;i++){
+   if (num % i == 0) {
+                isPrime = 0;
+                break;
+            }
+        }
+    }
+
+    if (isPrime)
+        printf("Prime Number");
+    else
+        printf("Not a Prime Number");
+    return 0;
 }
 
 
